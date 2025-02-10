@@ -10,7 +10,7 @@
 ✅ For RedHat, replace apt with dnf.
 
 ## 🛠 Installation Instructions:
-**1️⃣** Open the install_splunk.sh script file.
+**1️⃣** Open the install_splunk.sh script file using any text editor.
 
 **2️⃣** Copy all the script content.
 
@@ -28,14 +28,16 @@ sudo chmod +x install_splunk.sh
 ```sh
 sudo ./install_splunk.sh
 ```
-🔑 Using sudo ensures proper permissions for installation! 🚀
+##### 📌 Note:
+_**./** means you are running the script from the current directory. If you are not in the current directory, use the full path to the script instead_
 
-👤 If you're not using the root user, you'll need sudo to perform administrative actions during installation.
+_🔑 Using sudo ensures proper permissions for installation!_
+
+_👤 If you're not using the root user, you'll need sudo to perform administrative actions during installation_
 
 ## 📜 What’s Inside the Installation Script?
 
 ### 🔹 Step 1: Update and Upgrade Package Managers
-echo "Updating and upgrading package managers..."
 ```sh
 sudo apt update && sudo apt upgrade -y
 ```
