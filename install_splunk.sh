@@ -21,8 +21,8 @@ sudo usermod -aG sudo splunk
 
 # Step 5: Download Splunk Enterprise
 echo "Downloading Splunk Enterprise..."
-SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.3.0/linux/splunk-9.3.0-51ccf43db5bd-Linux-x86_64.tgz"
-wget -O /tmp/splunk-9.3.0.tgz "$SPLUNK_URL"
+SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.3.2/linux/splunk-9.3.2-d8bb32809498-Linux-x86_64.tgz"
+wget -O /tmp/splunk-9.3.2.tgz "$SPLUNK_URL"
 
 # Step 6: Install Splunk Enterprise
 echo "Installing Splunk Enterprise..."
