@@ -141,14 +141,29 @@ sudo su - splunk -c "
     ./splunk status || echo 'Splunk is not running. Starting Splunk...';
     ./splunk start
 "
+
 ```
-### 🔹 Instructions for managing Splunk
-To manage Splunk, use the following commands as the Splunk
+
+### Step 17: Enable Splunk Web SSL (HTTPS)
 ```sh
+echo "Enabling Splunk Web SSL..."
+sudo -u splunk bash -c 'echo -e "[settings]\nstartwebserver = True\nenableSplunkWebSSL = True\nsslVersions = tls1.2\n" >> /opt/splunk/etc/system/local/web.conf'
+```
+
+### Step 18: Restarting After Enabling HTTPS
+```sh
+sudo /opt/splunk/bin/splunk restart
+```
+
+# Instructions for managing Splunk
+```sh
+echo "To manage Splunk, use the following commands as the Splunk user:"
 echo "  Start Splunk: ./splunk start"
 echo "  Stop Splunk: ./splunk stop"
 echo "  Restart Splunk: ./splunk restart"
+echo "Script execution completed."
 ```
+
 
 ## 🚀 Simplifying Splunk Installation for the Architect Class
 Since we are installing multiple Splunk instances for the architect class, I have designed a Bash script to streamline the process and speed up our work.  
