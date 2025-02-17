@@ -1,7 +1,7 @@
 # 🚀 Install Splunk Using a Bash Script
 
 ## 📌 Key Notes:
-✅ This script installs Splunk 9.3.0 for Linux.
+✅ This script installs Splunk 9.3.2 for Linux.
 
 ✅ Designed for Ubuntu, but can be modified for other distros.
 
@@ -61,8 +61,8 @@ sudo usermod -aG sudo splunk
 
 ### 🔹 Step 5: Download Splunk Enterprise
 ```sh
-SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.3.0/linux/splunk-9.3.0-51ccf43db5bd-Linux-x86_64.tgz"
-wget -O /tmp/splunk-9.3.0.tgz "$SPLUNK_URL"
+SPLUNK_URL="https://download.splunk.com/products/splunk/releases/9.3.2/linux/splunk-9.3.2-d8bb32809498-Linux-x86_64.tgz"
+wget -O /tmp/splunk-9.3.2.tgz "$SPLUNK_URL"
 ```
 
 ### 🔹 Step 6: Install Splunk Enterprise
