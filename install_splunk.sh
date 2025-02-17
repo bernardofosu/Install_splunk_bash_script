@@ -88,6 +88,13 @@ sudo su - splunk -c "
     ./splunk start
 "
 
+# Step 17: Enable Splunk Web SSL (HTTPS)
+echo "Enabling Splunk Web SSL..."
+sudo -u splunk bash -c 'echo -e "[settings]\nstartwebserver = True\nenableSplunkWebSSL = True\nsslVersions = tls1.2\n" >> /opt/splunk/etc/system/local/web.conf'
+
+# Step 18: Restarting After Enabling HTTPS
+sudo /opt/splunk/bin/splunk restart
+
 # Instructions for managing Splunk
 echo "To manage Splunk, use the following commands as the Splunk user:"
 echo "  Start Splunk: ./splunk start"
