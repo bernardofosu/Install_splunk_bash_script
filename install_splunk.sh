@@ -26,7 +26,7 @@ wget -O /tmp/splunk-9.3.2.tgz "$SPLUNK_URL"
 
 # Step 6: Install Splunk Enterprise
 echo "Installing Splunk Enterprise..."
-sudo tar -xzvf /tmp/splunk-9.3.0.tgz -C /opt
+sudo tar -xzvf /tmp/splunk-9.3.2.tgz -C /opt
 
 # Step 7: Change ownership of /opt/splunk
 echo "Changing ownership of /opt/splunk to Splunk user..."
